@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-streamymixreact-staging-14319-authRole",
+      "UnauthRoleArn": "arn:aws:iam::269482271019:role/amplify-streamymixreact-staging-14319-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::269482271019:role/amplify-streamymixreact-staging-14319-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-streamymixreact-staging-14319-deployment",
+      "UnauthRoleName": "amplify-streamymixreact-staging-14319-unauthRole",
+      "StackName": "amplify-streamymixreact-staging-14319",
+      "StackId": "arn:aws:cloudformation:us-west-2:269482271019:stack/amplify-streamymixreact-staging-14319/24036ad0-99ca-11ec-bd8e-02cd4e6408e9",
+      "AmplifyAppId": "d3gtn5yj6yvofm"
+    },
+    "categories": {
+      "auth": {
+        "streamymixreact": {}
+      }
+    }
+  }
+}
