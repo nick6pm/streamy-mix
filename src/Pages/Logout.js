@@ -29,7 +29,7 @@ let navigate = useNavigate()
                 }} } 
 
       return(
-<HeroLayout3 overrides={loggedOut} height="71.9vh "width='100vw' /> 
+<HeroLayout3 overrides={loggedOut} height="76vh" /> 
     );
 }
 

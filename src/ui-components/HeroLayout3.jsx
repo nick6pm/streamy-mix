@@ -9,14 +9,17 @@ export default function HeroLayout3(props) {
   let navigate = useNavigate()
   return (
     <Flex
-      gap="10px"
-      direction="column"
-      justifyContent="center"
-      alignItems="center"
-      overflow="hidden"
-      position="relative"
-      padding="160px 240px 160px 240px"
-      backgroundColor="rgba(0,0,0,1)"
+    gap="10px"
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    alignSelf="stretch"
+    overflow="hidden"
+    position="relative"
+    width="auto"
+    height={"81vh"}
+    padding="100px 50px 0px 50px"
+    backgroundColor="rgba(0,0,0,1)"
       {...rest}
       {...getOverrideProps(overrides, "Flex")}
     >
@@ -26,7 +29,8 @@ export default function HeroLayout3(props) {
         justifyContent="center"
         alignItems="center"
         shrink="0"
-        width="960px"
+        width="auto"
+        height={"stretch"}
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
@@ -40,9 +44,10 @@ export default function HeroLayout3(props) {
           textAlign="center"
           display="flex"
           direction="column"
+          height={"stretch"}
           justifyContent="flex-start"
           letterSpacing="0.49px"
-          width="960px"
+          width="auto"
           shrink="0"
           alignSelf="stretch"
           position="relative"
@@ -54,7 +59,8 @@ export default function HeroLayout3(props) {
           gap="16px"
           direction="column"
           shrink="0"
-          width="960px"
+          width="auto"
+          height={"stretch"}
           position="relative"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0]")}
@@ -67,9 +73,10 @@ export default function HeroLayout3(props) {
             lineHeight="48px"
             textAlign="center"
             display="flex"
+            height={"stretch"}
             direction="column"
             justifyContent="flex-start"
-            width="960px"
+            width="auto"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
@@ -80,6 +87,7 @@ export default function HeroLayout3(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
+            height={"stretch"}
             color="rgba(255,255,255,1)"
             lineHeight="24px"
             textAlign="center"
@@ -87,7 +95,7 @@ export default function HeroLayout3(props) {
             direction="column"
             justifyContent="flex-start"
             letterSpacing="0.010000000000000009px"
-            width="960px"
+            width="auto"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"

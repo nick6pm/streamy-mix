@@ -19,7 +19,7 @@ useEffect(() => {
 
 return (
 
-loggedIn ? ( <StreamyApp height="81.5vh"/>  ) : (   <NavBar width='100vw'/>, <HeroLayout3 alignItems= "center" height= "81vh"/> )
+loggedIn ? ( <StreamyApp/>  ) : (   <NavBar/>, <HeroLayout3/> )
 
 );
 }

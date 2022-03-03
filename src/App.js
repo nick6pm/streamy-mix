@@ -28,7 +28,7 @@ export function App (signOut, user) {
 
 <Router>
 <div> 
-<NavBar width='100vw' />
+<NavBar/>
 {loggedIn ? ( <SideBar/>) : (<></>)}
 </div>
 <Routes>
@@ -42,7 +42,7 @@ export function App (signOut, user) {
   <Route path="*" element={< Home />} />
 </Routes>
 <div>
-  <MarketingFooter width='100vw'/>
+  <MarketingFooter/>
 </div>
 </Router>
   );

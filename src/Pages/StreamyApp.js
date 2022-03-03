@@ -16,7 +16,7 @@ function componentDidMount (signOut, user) {
 export function StreamyApp() {
   componentDidMount();
   return (
-    <StreamyBasic height="61.5vh"/>
+    <StreamyBasic/>
 
   );
 }

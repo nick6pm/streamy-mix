@@ -7,29 +7,36 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Text, View } from "@aws-amplify/ui-react";
+import { Text, Flex } from "@aws-amplify/ui-react";
 export default function MarketingFooter(props) {
   const { overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
   return (
-    <View
-      width="1440px"
-      height="100px"
+    <Flex
+    gap="10px"
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    width="auto"
+    height="auto"
+    overflow="hidden"
+    position="relative"
+    padding="100px 0px 0px 0px"
+    backgroundColor="rgba(0,0,0,1)"
+    {...rest}
+    {...getOverrideProps(overrides, "Flex")}
+  >
+    <Flex
+    direction="row"
+    justifyContent="center"
+    alignItems="center"
+    alignSelf="stretch"
+    height = "auto"
       position="relative"
       padding="0px 0px 0px 0px"
       {...rest}
       {...getOverrideProps(overrides, "View")}
     >
-      <View
-        position="absolute"
-        top="0%"
-        bottom="0%"
-        left="0%"
-        right="0%"
-        padding="0px 0px 0px 0px"
-        backgroundColor="rgba(0,0,0,1)"
-        {...getOverrideProps(overrides, "View.View[0]")}
-      ></View>
       <Text
         fontFamily="Inter"
         fontSize="16px"
@@ -37,19 +44,18 @@ export default function MarketingFooter(props) {
         color="rgba(255,255,255,1)"
         lineHeight="24px"
         textAlign="center"
-        display="flex"
+        display="flex-start"
+        alignSelf="center"
         direction="column"
         justifyContent="center"
         letterSpacing="0.010000000000000009px"
-        width="234px"
-        height="100px"
-        position="absolute"
-        bottom="0px"
-        right="0px"
+        position="relative"
+        bottom="25px"
         padding="0px 0px 0px 0px"
         children="STREAMSTATE LLC 2022"
         {...getOverrideProps(overrides, "View.Text[0]")}
       ></Text>
-    </View>
+    </Flex>
+  </Flex>
   );
 }
