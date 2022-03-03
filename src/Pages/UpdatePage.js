@@ -7,7 +7,7 @@ import { Updates } from '../ui-components';
 
 export function UpdatePage(signOut, user) {
 return (
-    <Updates width="100vw" height="71.9vh"/>
+    <Updates width="100vw" />
 
  );
 }
