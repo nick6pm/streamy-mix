@@ -14,7 +14,6 @@ import { default as Logout } from './Pages/Logout';
 export function App (signOut, user) {
 
   const [loggedIn, setLoggedIn] = useState(false);
-
   const assessLogin = () => {
   Auth.currentAuthenticatedUser().then(sess => 
     {console.log('Logged In'); setLoggedIn(true);}).catch(() => 

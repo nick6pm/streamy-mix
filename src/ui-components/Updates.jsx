@@ -21,7 +21,8 @@ export default function Updates(props) {
       overflow="hidden"
       position="relative"
       width="auto"
-      height={"700px"}
+      margin-top= "80px"
+      height="auto"
       padding="0px 100px 0px 100px"
       backgroundColor="rgba(0,0,0,1)"
     >

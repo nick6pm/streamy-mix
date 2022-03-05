@@ -2,6 +2,7 @@ import { Auth } from "aws-amplify";
 import { useNavigate } from "react-router-dom";
 import  {HeroLayout3} from "../ui-components";
 import {React} from "react"
+import { withAuthenticator } from "@aws-amplify/ui-react";
 
 function componentDidMount (signOut, user) {
   const reloadCount = sessionStorage.getItem('reloadCount');
@@ -12,6 +13,15 @@ function componentDidMount (signOut, user) {
     sessionStorage.removeItem('reloadCount');
   }
 }
+
+const signOut = async () => {
+  try {
+      await Auth.signOut();
+      window.location.reload();
+  } catch (error) {
+      console.log('error signing out: ', error);
+  }
+};
 
 export function Logout() {
 let navigate = useNavigate()
@@ -25,7 +35,7 @@ let navigate = useNavigate()
                "Flex.Flex[0].Button[0]" : { 
                 children: "logout",
                 onClick: async () => {
-                 await (Auth.signOut()) (componentDidMount())
+                 await (signOut()) 
                 }} } 
 
       return(
