@@ -7,14 +7,14 @@ export function StreamyBasic() {
     <Flex
       gap="10px"
       direction="column"
-      justifyContent="center"
+      justifyContent="flex-start"
       alignItems="center"
       alignSelf="stretch"
       overflow="hidden"
       position="relative"
-      width="auto"
-      height={"76vh"}
-      padding="0px 100px 0px 100px"
+      width="100vw"
+      height="100vh"
+      padding="10px 20px 0px 20px"
       backgroundColor="rgba(0,0,0,1)"
     >
         <Flex
@@ -23,7 +23,8 @@ export function StreamyBasic() {
         justifyContent="flex-start"
         alignItems="center"
         shrink="0"
-        width="max-content"
+        width="auto"
+        height={"auto"}
         position="relative"
         padding="0px 0px 0px 0px"
       >
@@ -41,7 +42,7 @@ export function StreamyBasic() {
             position="relative"
             alignSelf="center"
             padding="0px 0px 20px 0px"
-            children="COMING SOON :"
+            children="COMING SOON"
           ></Text>      
         </Flex>
         <Flex

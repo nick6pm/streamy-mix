@@ -15,27 +15,27 @@ export default function MarketingFooter(props) {
     <Flex
     gap="10px"
     direction="column"
-    justifyContent="center"
+    justifyContent="flex-start"
+    alignSelf="center"
     alignItems="center"
-    width="auto"
-    height="auto"
+    width="100vw"
+    height={"auto"}
     overflow="hidden"
-    position="relative"
-    padding="100px 0px 0px 0px"
+    position="fixed"
+    bottom={"0"}
+    padding="50px 0px 0px 0px"
     backgroundColor="rgba(0,0,0,1)"
     {...rest}
     {...getOverrideProps(overrides, "Flex")}
   >
     <Flex
-    direction="row"
-    justifyContent="center"
-    alignItems="center"
-    alignSelf="stretch"
-    height = "auto"
-      position="relative"
-      padding="0px 0px 0px 0px"
-      {...rest}
-      {...getOverrideProps(overrides, "View")}
+        direction="column"
+        justifyContent="flex-start"
+        alignItems="center"
+        width="max-content"
+        height={"50px"}
+        position="relative"
+        padding=" 10px 0px 0px 0px"
     >
       <Text
         fontFamily="Inter"

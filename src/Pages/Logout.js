@@ -2,17 +2,6 @@ import { Auth } from "aws-amplify";
 import { useNavigate } from "react-router-dom";
 import  {HeroLayout3} from "../ui-components";
 import {React} from "react"
-import { withAuthenticator } from "@aws-amplify/ui-react";
-
-function componentDidMount (signOut, user) {
-  const reloadCount = sessionStorage.getItem('reloadCount');
-  if(reloadCount < 1) {
-    sessionStorage.setItem('reloadCount', String(reloadCount + 1));
-    window.location.reload();
-  } else {
-    sessionStorage.removeItem('reloadCount');
-  }
-}
 
 const signOut = async () => {
   try {
@@ -24,7 +13,6 @@ const signOut = async () => {
 };
 
 export function Logout() {
-let navigate = useNavigate()
     const loggedOut = {
       "Flex.Flex[0].Text[0]" : { 
          children: "" }, 
@@ -39,7 +27,7 @@ let navigate = useNavigate()
                 }} } 
 
       return(
-<HeroLayout3 overrides={loggedOut} height="76vh" /> 
+<HeroLayout3 overrides={loggedOut} height="100vh" /> 
     );
 }
 

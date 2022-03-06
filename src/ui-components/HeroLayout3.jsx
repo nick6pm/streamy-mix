@@ -11,13 +11,13 @@ export default function HeroLayout3(props) {
     <Flex
     gap="10px"
     direction="column"
-    justifyContent="center"
+    justifyContent="flex-start"
     alignItems="center"
     alignSelf="stretch"
     overflow="hidden"
     position="relative"
-    width="auto"
-    height={"81vh"}
+    width="100vw"
+    height={"100vh"}
     padding="100px 50px 0px 50px"
     backgroundColor="rgba(0,0,0,1)"
       {...rest}
@@ -30,7 +30,7 @@ export default function HeroLayout3(props) {
         alignItems="center"
         shrink="0"
         width="auto"
-        height={"stretch"}
+        height={"auto"}
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
